@@ -1,0 +1,29 @@
+{
+  "name": "b3-nodejs",
+  "version": "1.0.0",
+  "description": "Nouveau Projet",
+  "main": "server.js",
+  "scripts": {
+    "start": "ts-node --esm --experimental-specifier-resolution=node src/server.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.8.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-ws": "^5.0.2",
+    "path": "^0.12.7",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.2",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/express": "^4.17.15",
+    "@types/express-ws": "^3.0.1",
+    "prisma": "^4.8.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
