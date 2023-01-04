@@ -1,6 +1,6 @@
 {
   "name": "b3-nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Nouveau Projet",
   "main": "server.js",
   "repository": "https://github.com/jfrninga/b3-node-js",
