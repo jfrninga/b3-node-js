@@ -1,6 +1,6 @@
 {
   "name": "jfr-b3-nodejs",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Nouveau Projet",
   "main": "src/server.js",
   "repository": "https://github.com/jfrninga/b3-node-js",
