@@ -9,5 +9,9 @@ prisma.user.createMany({
     }, {
         email: 'foo.bar@test.com',
         name: 'Foo Bar',
+    
+    }, {
+        email: 'test.test@test.com',
+        name: 'Test TOTO',
     }]
 })

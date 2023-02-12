@@ -9,6 +9,11 @@ import { getWs } from "./routes/getWs";
 import { authenticationMiddleware } from "./middlewares/authenticationMiddleware";
 import { getRegister } from "./routes/getRegister";
 import { postRegister } from "./routes/postRegister";
+import { getChat } from "./routes/getChat";
+import { updateUser } from "./routes/updateUser";
+import { delUser } from "./routes/delUser";
+import { getLogout } from "./routes/getLogout";
+import { getWsPosts } from "./routes/getWsPosts";
 
 const SECRET_KEY = 'MySecretKeyIsAwesome';
 
@@ -32,8 +37,13 @@ function main() {
     postRegister(app)
 
     app.use(authenticationMiddleware);
+    getLogout(app)
+    getChat(app)
     getRoot(app)
+    updateUser(app)
+    delUser(app)
     getWs(app, sockets)
+    getWsPosts(app, sockets);
 
     app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
         console.error(error)

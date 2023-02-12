@@ -18,5 +18,15 @@ export function getRoot(app: Application) {
         }
 
         res.sendFile(path.join(__dirname, '../../pages/index.html'))
+
+        const posts = data.map((post) => {
+            if (post.content) {
+                return {
+                    content: post.content,
+                };
+            }
+        });
+
+        res.render("root", { posts });
     })
 }

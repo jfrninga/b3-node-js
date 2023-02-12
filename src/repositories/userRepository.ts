@@ -30,21 +30,21 @@ export async function createUser(name: string, email: string) {
         data: {
             name,
             email
-            
+
         }
     })
 }
 
-export function updateUser(id: string, name: string, email: string) {
+export function updateUserProfile(id: string, name: string, email: string) {
     return prisma.user.update({
         where: {
-            id
+            id,
         },
         data: {
             name,
-            email
-        }
-    })
+            email,
+        },
+    });
 }
 
 export function deleteUser(id: string) {
@@ -54,3 +54,14 @@ export function deleteUser(id: string) {
         },
     })
 }
+
+
+export function createPost(content: string, userId: string) {
+    return prisma.post.create({
+      data: {
+        content,
+        userId,
+      },
+    });
+  }
+  

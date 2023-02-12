@@ -1,33 +1,26 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Chat App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon App</title>
 </head>
 
 <body>
-    <h1>My chat app</h1>
-    <i id="chat-status"></i>
-    <div id="message-list">
-        <form>
-            <input type="text" id="chat-input" />
-            <button type="submit">Send</button>
-        </form>
+    <div class="container">
+        <h1>Bienvenue sur Notre App !</h1>
+        <div class="btn-container">
+            <a href="/update"><button type="submit" class="btn">modify info</button></a>
+            <a href="/chat"><button type="submit" class="btn">chat</button></a>
+            <a href="/delete"><button type="submit" class="btn">delete profile</button></a>
+            <a href="/log out"><button type="submit" class="btn">log out</button></a>
+        </div>
     </div>
-    <style>
-        #chat-status {
-            display: block;
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            margin-bottom: 15px;
-        }
-    </style>
-    <script src="client.js"></script>
+    <form method="POST">
+        <textarea name="post" id="" cols="30" rows="10"></textarea>
+    </form>
 </body>
 
 </html>
