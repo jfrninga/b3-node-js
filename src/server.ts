@@ -13,7 +13,7 @@ import { getChat } from "./routes/getChat";
 import { updateUser } from "./routes/updateUser";
 import { delUser } from "./routes/delUser";
 import { getLogout } from "./routes/getLogout";
-import { getWsPosts } from "./routes/getWsPosts";
+// import { getWsPosts } from "./routes/getWsPosts";
 
 const SECRET_KEY = 'MySecretKeyIsAwesome';
 
@@ -43,7 +43,7 @@ function main() {
     updateUser(app)
     delUser(app)
     getWs(app, sockets)
-    getWsPosts(app, sockets);
+    // getWsPosts(app, sockets);
 
     app.use((error: Error, req: Request, res: Response, next: NextFunction) => {
         console.error(error)

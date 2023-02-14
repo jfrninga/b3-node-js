@@ -7,27 +7,14 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chat App</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 
 <body>
-    <h1>My chat app</h1>
-    <i id="chat-status"></i>
-    <div id="message-list">
-        <form>
-            <input type="text" id="chat-input" />
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    <style>
-        #chat-status {
-            display: block;
-            border-radius: 50%;
-            width: 10px;
-            height: 10px;
-            margin-bottom: 15px;
-        }
-    </style>
-    <script src="client.js"></script>
+    <div id="root"></div>
+    <script type="text/babel" src="component.js"></script>
 </body>
 
 </html>

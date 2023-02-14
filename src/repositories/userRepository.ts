@@ -56,12 +56,12 @@ export function deleteUser(id: string) {
 }
 
 
-export function createPost(content: string, userId: string) {
-    return prisma.post.create({
-      data: {
-        content,
-        userId,
-      },
-    });
-  }
+// export function createPost(content: string, userId: string) {
+//     return prisma.post.create({
+//       data: {
+//         content,
+//         userId,
+//       },
+//     });
+// }
   
